@@ -149,6 +149,7 @@ We need to have several metadata for bugs for easier classification:
 	- **Needs Minimal Complete and Verifiable Example**: `I-needs_mcve`
 	- **Cannot Reproduce**: `I-cannot_reproduce`
 	- **Invalid**: `I-invalid`
+	- **Duplicate**: `I-duplicate`
 - **Difficulty for Contributors**: if a newcomer was interested in contributing
   a fix, what is the estimated level of difficulty?
   	- **Newcomer-friendly**: `L-newcomer_friendly`
