@@ -121,11 +121,21 @@ Every bug report gets labelled `C-bug`.
 
 We need to have several metadata for bugs for easier classification:
 
-- **Severity**: how bad is this bug? Is it bad enough to block a stable release?
-	- **Low**: `S-low`
-	- **Medium**: `S-medium`
-	- **High**: `S-high`
-	- **Blocking/Critical**: `S-blocking`
+- **Kind**: what kind of bug is this? (non-exhaustive, don't necessarily need
+  to be labelled as these special class of bugs)
+	- **Security**: `BK-security`
+	- **Unsound**: `BK-unsound` (code that triggers UB or violates safety rules
+	  of various languages)
+	- **Privacy**: `BK-privacy`
+	- **Accessibility**: `BK-accessibility`
+	- **Internationalization**: `BK-internationalization`
+	- **Localization**: `BK-localization`
+- **Priority**: how bad is this bug? Is it bad enough to block a stable release?
+	- **Won't Fix**: `P-wont_fix`
+	- **Low**: `P-low`
+	- **Medium**: `P-medium`
+	- **High**: `P-high`
+	- **Blocking/Critical**: `P-blocking`
 - **Regression**: is this a new bug that occurs in `stable` or `nightly`, or
   is this a regression? If it is a regression:
   	- **Regression from one stable version to another**: `R-stable_to_stable`
@@ -136,7 +146,9 @@ We need to have several metadata for bugs for easier classification:
 	  `B-firefox_developer_edition`
 - **Information**: is there sufficent information in the bug report?
 	- **Insufficient Info**: `I-needs_more_info`
-	- **Needs Minimal Complete and Verifiable Example**: `I-needs_mcve`	
+	- **Needs Minimal Complete and Verifiable Example**: `I-needs_mcve`
+	- **Cannot Reproduce**: `I-cannot_reproduce`
+	- **Invalid**: `I-invalid`
 - **Difficulty for Contributors**: if a newcomer was interested in contributing
   a fix, what is the estimated level of difficulty?
   	- **Newcomer-friendly**: `L-newcomer_friendly`
@@ -144,11 +156,24 @@ We need to have several metadata for bugs for easier classification:
   	- **Medium**: `L-medium`
   	- **Hard** `L-hard`
 
+#### Discussions
+
+Every discussion gets labelled `C-discussion`.
+
+- **Discussion resolved**: `DI-resolved`
+- **Discussion off-topic**: `DI-off_topic`
+
 #### Feature Requests
 
 Every feature request gets labelled `C-feature_request`.
 
+- **Feature request accepted**: `FR-accepted`
+- **Feature request closed**: `FR-closed`
+- **Feature request implemented**: `FR-implemented`
+
 #### Documentation
+
+Every documentation issue/PR gets labelled `C-documentation`
 
 - **Missing documentation**: `D-missing`
 - **Incorrect/invalid documentation**: `D-incorrect`
